@@ -1,7 +1,8 @@
 <?php 
+require "./fail.php";
 
-
-$variavel  = 1222222222222222222222222222112;
+$variavel  = 'bxbxteste';
 
 var_dump($variavel);
 
+funcao1('afghsfajsa');
