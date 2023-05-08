@@ -1,7 +1,7 @@
 <?php 
 require "./fail.php";
 
-$variavel  = 'bxbxteste';
+$variavel  = 'bxbxtesteaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
 
 var_dump($variavel);
 
