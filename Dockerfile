@@ -22,6 +22,6 @@ RUN sed -i 's/80/9003/g' /etc/apache2/sites-available/000-default.conf /etc/apac
 
 # Expor a porta 9003
 EXPOSE 9003
-
+ 
 # Inicia o servidor Apache
 CMD ["apache2-foreground"]
