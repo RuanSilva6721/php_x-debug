@@ -5,10 +5,12 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     ports:
       - "9003:9003"
     volumes:
       - .:/var/www/html
-    environment:
-      XDEBUG_MODE: "debug,coverage"
-      XDEBUG_CONFIG: "client_host=host.docker.internal"
+      - ./99-xdebug.ini:/usr/local/etc/php/conf.d/99-xdebug.ini
+    restart: "no"
+

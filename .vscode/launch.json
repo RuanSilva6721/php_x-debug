@@ -35,7 +35,7 @@
             "port": 9003,
             "pathMappings": {
                 "${workspaceFolder}": {
-                    "/var/www/html": "${workspaceFolder}"
+                    "/var/www/html": "${workspaceFolder}/"
                 }
             }
         }
