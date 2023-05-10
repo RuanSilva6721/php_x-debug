@@ -5,7 +5,11 @@ $variavel  = 'zbxbxtesteaaaaaaaaaaaaaaaaaaaaaaaaazzzzzzzzzzzzzzzzzzzzzzzzaaaaa';
 
 var_dump($variavel);
 
-funcao1('afghsfajsa');
+try{
+    funcao1('afghsfajsa');
+
+}catch(\Throwable $e){
+    echo $e->getMessage();    
+}
 
 
-phpinfo();

@@ -7,6 +7,7 @@
  */
 function funcao1(string $param) :never
 {
+    $variavel =1;
     echo $param;
     funcao2();
 
@@ -19,6 +20,10 @@ function funcao1(string $param) :never
  */
 function funcao2():never
 {
-    throw new Exception('Mensagem');
+    $variavel =3;
+    if($variavel ==3){
+
+        throw new Exception('Mensagem');
+    }
 
 }
