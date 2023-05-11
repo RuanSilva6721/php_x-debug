@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-enable xdebug \
     && docker-php-ext-install zip
 
-
+RUN apt install -y kcachegrind
 # Define o diretório de trabalho da aplicação
 WORKDIR /var/www/html
 

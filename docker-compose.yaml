@@ -5,11 +5,14 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    environment:
+      DISPLAY: $DISPLAY
     extra_hosts:
       - "host.docker.internal:host-gateway"
     ports:
       - "9003:9003"
     volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
       - .:/var/www/html
       - ./99-xdebug.ini:/usr/local/etc/php/conf.d/99-xdebug.ini
     restart: "no"
