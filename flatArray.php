@@ -19,9 +19,10 @@ class FlatArray implements IteratorAggregate
      * @return void
      */
     public function flattenArray(array $originArray){
-        foreach($originArray as $item){
-           $this->flatArray = array_merge($this->flatArray, $item);
-        }
+        // foreach($originArray as $item){
+        //    $this->flatArray = array_merge($this->flatArray, $item);
+        // }
+        $this->flatArray  = array_merge(... $originArray);
     }
 
     /**
